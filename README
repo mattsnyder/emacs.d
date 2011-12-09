@@ -1,0 +1,4 @@
+M-x package-refresh-contents
+M-x package-install RET starter-kit RET
+
+M-x package-install color-theme
