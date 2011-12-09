@@ -4,8 +4,11 @@ M-x package-install RET starter-kit RET
 M-x package-install starter-kit-bindings
 http://www.kieranhealy.org/esk/starter-kit-bindings.html
 
-
 package-list-packages RET ruby major mode
 
 M-x package-install starter-kit-ruby
 
+http://www.emacswiki.org/cgi-bin/wiki/InteractivelyDoThings
+https://github.com/capitaomorte/yasnippet
+http://www.emacswiki.org/emacs/FlymakeRuby
+http://www.nongnu.org/color-theme/index.html
