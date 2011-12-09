@@ -5,3 +5,7 @@ M-x package-install starter-kit-bindings
 http://www.kieranhealy.org/esk/starter-kit-bindings.html
 
 
+package-list-packages RET ruby major mode
+
+M-x package-install starter-kit-ruby
+
