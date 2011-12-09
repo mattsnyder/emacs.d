@@ -5,14 +5,10 @@
              '("tromey" . "http://tromey.com/elpa/") t)
 (package-initialize)
 
+;; Ruby
+ (autoload 'ruby-mode "ruby-mode" "Major mode for ruby files" t)
+   (add-to-list 'auto-mode-alist '("\\.rb$" . ruby-mode))
+   (add-to-list 'interpreter-mode-alist '("ruby" . ruby-mode))
 
-(when (not package-archive-contents)
-  (package-refresh-contents))
 
-;; Add in your own as you wish:
-(defvar my-packages '(starter-kit starter-kit-bindings)
-  "A list of packages to ensure are installed at launch.")
 
-(dolist (p my-packages)
-  (when (not (package-installed-p p))
-    (package-install p)))
