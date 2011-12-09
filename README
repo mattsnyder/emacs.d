@@ -1,4 +1,7 @@
 M-x package-refresh-contents
 M-x package-install RET starter-kit RET
 
-M-x package-install color-theme
+M-x package-install starter-kit-bindings
+http://www.kieranhealy.org/esk/starter-kit-bindings.html
+
+
