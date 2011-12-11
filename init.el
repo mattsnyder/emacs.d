@@ -45,6 +45,7 @@
 (define-key rinari-minor-mode-map [(control meta shift right)] 'rinari-find-view)
 
 ;; Snippets
+(require 'yasnippet)
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/elpa/yasnippet-0.6.1/snippets")
 
