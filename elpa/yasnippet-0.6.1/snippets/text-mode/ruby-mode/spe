@@ -1,0 +1,4 @@
+#name: specify { ... }
+#group: rspec
+# --
+specify { @${1:subject}.should ${2:be something} }$0

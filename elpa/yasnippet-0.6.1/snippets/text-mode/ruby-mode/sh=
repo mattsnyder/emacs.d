@@ -1,0 +1,4 @@
+#name: should ==
+#group : rspec
+# --
+${1:target}.should == ${0:value}

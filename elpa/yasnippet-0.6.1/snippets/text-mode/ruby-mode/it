@@ -1,0 +1,4 @@
+#name: it { ... }
+#group : rspec
+# --
+it { should ${1:do something} }$0

@@ -1,0 +1,12 @@
+#name: RSpec::Matchers.define ...
+#group : rspec
+# --
+RSpec::Matchers.define :${1:method_name} do |expected|
+match do |actual|$>
+$0$>
+end$>
+failure_message_for_should do$>
+end$>
+failure_message_for_should_not do |expected|$>
+end$>
+end

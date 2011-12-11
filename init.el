@@ -45,10 +45,8 @@
 (define-key rinari-minor-mode-map [(control meta shift right)] 'rinari-find-view)
 
 ;; Snippets
-;;(add-to-list 'load-path (concat dotfiles-dir "/vendor/yasnippet.el"))
-;;(require 'yasnippet)
-;;(yas/initialize)
-;;(yas/load-directory (concat dotfiles-dir "/vendor/yasnippet.el/snippets"))
+(yas/initialize)
+(yas/load-directory "~/.emacs.d/elpa/yasnippet-0.6.1/snippets")
 
 ;; Flymake Ruby
 (require 'flymake)

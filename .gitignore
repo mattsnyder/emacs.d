@@ -1,3 +1,7 @@
 *~
 places
 .smex-items
+elpa/archives/*
+backups/*
+url/cookies
+.DS_Store
