@@ -1,0 +1,4 @@
+#name: subject { ... }
+#group: rspec
+# --
+subject { ${1:thing i am testing} }$0

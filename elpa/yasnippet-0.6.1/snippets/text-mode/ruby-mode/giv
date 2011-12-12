@@ -1,0 +1,7 @@
+#name: Given ... When ... Then
+#group : rspec
+# --
+Given(:${4:variable}) { ${5:precondition} }
+When(:${2:result}) { ${3:action} }
+Then { ${1:expectation} }
+$0$>

@@ -19,13 +19,8 @@
    (add-to-list 'interpreter-mode-alist '("ruby" . ruby-mode))
    (add-to-list 'auto-mode-alist '("\\.js\.erb\\'" . ruby-mode))
 
-;; SASS
-(require 'sass-mode)
-(add-to-list 'auto-mode-alist '("\\.sass$" . sass-mode))
-
 ;; HAML
 (require 'haml-mode)
-(add-to-list 'auto-mode-alist '("\\.haml$" . haml-mode))
 (define-key haml-mode-map [(control meta down)] 'haml-forward-sexp)
 (define-key haml-mode-map [(control meta up)] 'haml-backward-sexp)
 (define-key haml-mode-map [(control meta left)] 'haml-up-list)
@@ -38,18 +33,9 @@
 (add-hook 'ruby-mode-hook
           (lambda () (run-hooks 'abg-code-modes-hook)))
 
-
-;; Javascript
-(add-to-list 'auto-mode-alist '("\\.js\\'" . javascript-mode))
-   (autoload 'javascript-mode "javascript" nil t)
-
-;; CSS
-(add-to-list 'auto-mode-alist '("\\.css\\'" . css-mode))
-   (autoload 'css-mode "css-mode" nil t)
-
-;; ido 
-(require 'ido) 
-(ido-mode t)
+;; YAML
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
 
 ;; rinari 
 (require 'rinari)
@@ -59,17 +45,12 @@
 (define-key rinari-minor-mode-map [(control meta shift right)] 'rinari-find-view)
 
 ;; Snippets
-;;(add-to-list 'load-path (concat dotfiles-dir "/vendor/yasnippet.el"))
 (require 'yasnippet)
-;;(yas/initialize)
-;;(yas/load-directory (concat dotfiles-dir "/vendor/yasnippet.el/snippets"))
+(yas/initialize)
+(yas/load-directory "~/.emacs.d/elpa/yasnippet-0.6.1/snippets")
 
 ;; Flymake Ruby
 (require 'flymake)
-
-;; I don't like the default colors :)
-(set-face-background 'flymake-errline "red4")
-(set-face-background 'flymake-warnline "dark slate blue")
 
 ;; Invoke ruby with '-c' to get syntax checking
 (defun flymake-ruby-init ()

@@ -1,0 +1,6 @@
+#name : namespace ... do ... end
+#group : general
+# --
+namespace ${1:name} do
+$0$>
+end

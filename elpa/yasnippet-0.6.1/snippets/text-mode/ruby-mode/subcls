@@ -1,5 +1,4 @@
-#name : class ... end
-#contributor : hitesh <hitesh.jasani@gmail.com>
+#name : class < SuperClass ... end
 #group : definitions
 # --
 class ${1:$
@@ -8,6 +7,6 @@ class ${1:$
                                    (buffer-file-name))))))
            (cond
              ((string-match "_" fn) (replace-match "" nil nil fn))
-              (t fn)))}
+              (t fn)))} < ${2:SuperClass}
   $0
 end
