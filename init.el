@@ -75,6 +75,10 @@
 	     ))
 
 
+;; Whitespace mode
+(require 'whitespace)
+(add-hook 'ruby-mode-hook 'whitespace-mode)
+
 ;; Full screen toggle
 (defun toggle-fullscreen()
   (interactive)
