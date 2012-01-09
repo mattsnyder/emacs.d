@@ -33,6 +33,10 @@
 (add-hook 'ruby-mode-hook
           (lambda () (run-hooks 'abg-code-modes-hook)))
 
+;; LessCSS
+(require 'less-css-mode)
+(add-to-list 'auto-mode-alist '("\\.less\\'" . less-css-mode))
+
 ;; YAML
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
