@@ -37,6 +37,9 @@
 (require 'less-css-mode)
 (add-to-list 'auto-mode-alist '("\\.less\\'" . less-css-mode))
 
+;; Version Control
+(require 'magit)
+
 ;; YAML
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
@@ -118,6 +121,10 @@
 (global-set-key [(meta D)] 'backward-kill-word)
 (global-set-key [(meta N)] 'cleanup-buffer)
 (global-set-key [(control \])] 'indent-rigidly)
+
+(add-hook 'c-mode-hook
+          '(lambda ()
+             (define-key c-mode-map "\C-m" 'newline-and-indent)))
 
 (prefer-coding-system 'utf-8)
 
