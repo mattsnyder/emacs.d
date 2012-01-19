@@ -40,6 +40,10 @@
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
 
+;; Markdown
+(require 'markdown-mode)
+(add-to-list 'auto-mode-alist '("\\.md\.markdown\\'" . markdown-mode))
+
 ;; rinari 
 (require 'rinari)
 (define-key rinari-minor-mode-map [(control meta shift down)] 'rinari-find-rspec)
