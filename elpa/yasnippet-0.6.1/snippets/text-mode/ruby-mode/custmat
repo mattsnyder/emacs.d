@@ -1,8 +1,20 @@
 #name: Spec::Matchers.define ...
 #group : rspec
 # --
-Spec::Matchers.define :${1:method_name} do |expected|
+RSpec::Matchers.define :${2:method_name} do |expected|
 match do |actual|$>
 $0$>
+end$>
+
+failure_message_for_should do$>
+"${3:should_have_done_something}"$>
+end$>
+
+failure_message_for_should_not do$>
+"${4:should_have_not_done_something}"$>
+end$>
+
+description do$>
+"${1:description}"$>
 end$>
 end
