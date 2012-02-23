@@ -5,3 +5,4 @@ elpa/archives/*
 backups/*
 url/cookies
 .DS_Store
+skibler.el
